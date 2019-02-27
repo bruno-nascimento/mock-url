@@ -9,6 +9,8 @@ import (
 	"github.com/kataras/iris"
 )
 
+// https://github.com/kataras/iris/blob/master/_examples/file-server/single-page-application/embedded-single-page-application-with-other-routes/main.go
+
 var redisdb *redis.Client
 
 func main() {
