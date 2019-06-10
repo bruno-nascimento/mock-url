@@ -1,0 +1,21 @@
+{
+    // Use IntelliSense to learn about possible attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "Launch",
+            "type": "go",
+            "request": "launch",
+            "mode": "auto",
+            "program": "/home/bruno/go/src/github.com/bruno-nascimento/mock-url/main.go",
+            "cwd": "/home/bruno/go/src/github.com/bruno-nascimento/mock-url",
+            "env": {
+                "REDIS_URL" :"192.168.0.13:6379",
+                "MOCK_URL_PORT" : ":7777"
+            },
+            "args": []
+        }
+    ]
+}

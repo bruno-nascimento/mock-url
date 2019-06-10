@@ -7,3 +7,15 @@ services:
     network_mode: bridge
     ports: 
       - 6379:6379
+  
+  mock-url:
+    build: .
+    image: mock-url
+    network_mode: bridge
+    ports: 
+      - 7777:7777
+    environment: 
+      - REDIS_URL=192.168.0.13:6379
+      - MOCK_URL_PORT=:7777
+    # volumes:
+    #   - /var/run/docker.sock:/var/run/docker.sock
