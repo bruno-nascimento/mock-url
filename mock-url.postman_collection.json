@@ -1,0 +1,99 @@
+{
+	"info": {
+		"_postman_id": "b73d487c-2e19-40d6-8611-14e3e3be662f",
+		"name": "mock-url",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "POST",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"teste\" : \"value\"}\n\n"
+				},
+				"url": {
+					"raw": "http://localhost:7777/cfe/cartao",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "7777",
+					"path": [
+						"cfe",
+						"cartao"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "PUT",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"response\": {\n\t\t\"abc\" : \"123\"\n\t\t\n\t}, \n\t\"conditions\" : [\n\t\t{ \n\t\t\t\"fieldQuery\" : \"teste\", \n\t\t\t\"fieldExpectedValue\" : \"value\", \n\t\t\t\"fieldType\" : \"string\",\n\t\t\t\"operator\" : \"equal\", \n\t\t\t\"response\" : {\n\t\t\t\t\"agora\":\"foi\"\n\t\t\t} \n\t\t}\n\t] \n}"
+				},
+				"url": {
+					"raw": "http://localhost:7777/mock/post/cfe/cartao",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "7777",
+					"path": [
+						"mock",
+						"post",
+						"cfe",
+						"cartao"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GET",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"teste\" : \"value\"\n}"
+				},
+				"url": {
+					"raw": "http://localhost:7777/cfe/cartao/fatura",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "7777",
+					"path": [
+						"cfe",
+						"cartao",
+						"fatura"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
